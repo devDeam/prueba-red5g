@@ -4,6 +4,7 @@ import './Login.css';
 import logoSufi from '../../assets/login/logoSufi.svg'
 import USERS from '../../helpers/login/login.json';
 import Spinner from 'react-bootstrap/Spinner';
+import Modals from '../Components/Modals/Modals';
 
 const Login = () => {
   const navigate = useNavigate();
@@ -22,18 +23,32 @@ const Login = () => {
   })
   }
 
+  const cleanInputs = () => {
+    const name : HTMLInputElement = (document.getElementById('username') as HTMLInputElement);
+    name.value = ""
+    const password : HTMLInputElement = (document.getElementById('password') as HTMLInputElement);
+    password.value = ""
+  }
   const LogIn = () => {
     if(form.username === users.username && form.password === users.password){
       setLoading(true)
       setTimeout(()=> {setLoading(false)
         navigate("/dashboard");}, 3000)
     } else {
+      setLoading(true)
+      setTimeout(()=> {setLoading(false)
       setError(true);
+      }, 2000)
+      setError(false);
+      cleanInputs()
+
       return;
     }
   }
   return (
     <div className='login-container'>
+      {error && <Modals title="Usuario / Contraseña incorrectos" 
+      msg="Por favor, verífica tu nombre de usuario y/o contraseña e intenta nuevamente"/>}
     <div className='img-container'>
         <img src={logoSufi} alt=""/>
         <h2 className='title'>Sufipay</h2>
@@ -57,6 +72,7 @@ const Login = () => {
         <a href="http://" target="_blank" rel="noopener noreferrer">No recuerdo mi contraseña</a>
         </div>
       </div>
+      
     </div>
   )
 }
