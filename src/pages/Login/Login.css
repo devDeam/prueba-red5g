@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
-/* BASIC */
+/* Básicos */
 
 body {
   font-family: "Poppins", sans-serif;
@@ -33,10 +33,7 @@ a {
   font-weight: 400;
 }
 
-
-/* STRUCTURE */
-
-
+/* Estrúctura */
 .login-container {
   position: absolute;
   top: 40%;
@@ -59,8 +56,6 @@ a {
 .form-login {
     padding: 10px;
 }
-
-/* FORM TYPOGRAPHY*/
 
 input[type=button] {
   cursor: pointer;
@@ -140,9 +135,8 @@ input[type=button] {
   color: #ABB9C7;
 }
 
-/* ANIMATIONS */
+/* Animaciones simples */
 
-/* Simple CSS3 Fade-in-down Animation */
 .fadeInDown {
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
@@ -178,7 +172,6 @@ input[type=button] {
   }
 }
 
-/* Simple CSS3 Fade-in Animation */
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
@@ -222,7 +215,6 @@ input[type=button] {
   animation-delay: 1s;
 }
 
-/* Simple CSS3 Fade-in Animation */
 .underlineHover:after {
   display: block;
   left: 0;
@@ -244,7 +236,7 @@ input[type=button] {
 
 
 
-/* OTHERS */
+/* Otros */
 
 *:focus {
     outline: none;
