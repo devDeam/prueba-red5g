@@ -33,7 +33,7 @@ const Login = () => {
     if(form.username === users.username && form.password === users.password){
       setLoading(true)
       setTimeout(()=> {setLoading(false)
-        navigate("/dashboard");}, 3000)
+        navigate("/dashboard");}, 2000)
     } else {
       setLoading(true)
       setTimeout(()=> {setLoading(false)
@@ -46,9 +46,8 @@ const Login = () => {
     }
   }
   return (
+    <>
     <div className='login-container'>
-      {error && <Modals title="Usuario / Contraseña incorrectos" 
-      msg="Por favor, verífica tu nombre de usuario y/o contraseña e intenta nuevamente"/>}
     <div className='img-container'>
         <img src={logoSufi} alt=""/>
         <h2 className='title'>Sufipay</h2>
@@ -72,8 +71,10 @@ const Login = () => {
         <a href="http://" target="_blank" rel="noopener noreferrer">No recuerdo mi contraseña</a>
         </div>
       </div>
-      
     </div>
+      {error && <Modals title="Usuario / Contraseña incorrectos" 
+      msg="Por favor, verífica tu nombre de usuario y/o contraseña e intenta nuevamente"/>}
+    </>
   )
 }
 
