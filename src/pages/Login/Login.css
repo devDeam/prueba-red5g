@@ -92,18 +92,6 @@ input[type=button] {
   transition: all 0.3s ease-in-out; */
 }
 
-/* input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover  {
-  background-color: #39ace7;
-} */
-
-/* input[type=button]:active, input[type=submit]:active, input[type=reset]:active  {
-  -moz-transform: scale(0.95);
-  -webkit-transform: scale(0.95);
-  -o-transform: scale(0.95);
-  -ms-transform: scale(0.95);
-  transform: scale(0.95);
-} */
-
 .img-container {
     text-align: center;
 }
@@ -122,7 +110,7 @@ input[type=button] {
  color: #413E4D;
 }
 
-input[type=text], input[type=password] {
+#username, #password {
   background-color: #FFFFFF;
   border: none;
   color: #0d0d0d9d;
@@ -143,20 +131,14 @@ input[type=text], input[type=password] {
   border-radius: 6px 6px 6px 6px;
 }
 
-input[type=text]:focus, input[type=password]:focus  {
+#username:focus, #password:focus  {
   background-color: #FFFFFF;
   border-bottom: 2px solid #DD3542;
 }
 
-input[type=text]:placeholder {
+#username:placeholder, #password:placeholder{
   color: #ABB9C7;
 }
-
-input[type=password]:placeholder {
-  color: #ABB9C7;
-}
-
-
 
 /* ANIMATIONS */
 

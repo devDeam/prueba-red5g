@@ -6,7 +6,7 @@
             "desembolso": "918574",
             "tipoID": "Cédula",
             "numID":"1149023",
-            "monto":"1000.000"
+            "monto":"1.000.000"
         },
         {
             "fecha":"23-04-2023",
@@ -87,6 +87,38 @@
             "tipoID": "Cédula",
             "numID":"91311",
             "monto":"3.267.900"
+        },
+        {
+            "fecha":"26-04-2023",
+            "hora":"23:59:01",
+            "desembolso": "918574",
+            "tipoID": "Cédula",
+            "numID":"1149023",
+            "monto":"1.000.000"
+        },
+        {
+            "fecha":"23-04-2023",
+            "hora":"07:14:22",
+            "desembolso": "764092",
+            "tipoID": "Cédula",
+            "numID":"7245906",
+            "monto":"500.000"
+        },
+        {
+            "fecha":"26-04-2023",
+            "hora":"23:59:01",
+            "desembolso": "918574",
+            "tipoID": "Cédula",
+            "numID":"1149023",
+            "monto":"1.000.000"
+        },
+        {
+            "fecha":"23-04-2023",
+            "hora":"07:14:22",
+            "desembolso": "764092",
+            "tipoID": "Cédula",
+            "numID":"7245906",
+            "monto":"500.000"
         }
     ]
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 import info from '../../../helpers/info/data.json'
-const Table = () => {
+
+const Table = (): JSX.Element => {
   const data = info.data
   return (
     <div className="table-responsive col-12 col-md-11 mx-auto" style={{
@@ -30,6 +31,8 @@ const Table = () => {
             </tr>
           </thead>
           <tbody>
+            {/* Se reenderizan los elementos del body de la tabla dinámicamente, de acuerdo a la cantidad de registros que se encuentren
+            en el archivo data.json */}
             {data.map((e)=> (
                 <tr key={e.numID}>
                 <td>{e.fecha} &nbsp; {e.hora}</td>

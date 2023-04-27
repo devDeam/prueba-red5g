@@ -4,9 +4,8 @@ import Row from 'react-bootstrap/Row';
 import Toast from 'react-bootstrap/Toast';
 import INFO from './Info.model';
 
-function Modals({title, msg}: INFO) {
-  const [show, setShow] = useState(true);
-
+function Modals({title, msg}: INFO): JSX.Element {
+  const [show, setShow] = useState(true);   // Cuando el estado "show" sea true, se va a mostrar el modal, de lo contrario se mantiene oculto.
   return (
     <Row>
       <Col xs={6}>
