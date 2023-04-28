@@ -23,7 +23,7 @@ $ cd prueba-red5g
 $ npm install
 $ npm run dev
 ```
-Luego de esto, en el navegador de preferencia se debe ir a la dirección indicada en la terminal de comandos por ejemplo: "http://localhost:5173/"
-El usuario para ingresar por medio del login es el siguiente:
-Username: prueba@Red5G
-password: 12345
+* Luego de esto, en el navegador de preferencia se debe ir a la dirección indicada en la terminal de comandos por ejemplo: "http://localhost:5173/"
+* El usuario para ingresar por medio del login es el siguiente:
+* Username: prueba@Red5G
+* password: 12345
